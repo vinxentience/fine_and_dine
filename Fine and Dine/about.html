@@ -1,0 +1,210 @@
+<html>
+<head> 
+<title> Fine and Dine </title>
+<style>
+
+body{
+	margin: 0 auto;
+	overflow-x: hidden;
+	background-color: rgb(21,25,31);
+}
+
+#page-wrap{
+	width: 1365px;
+	margin: 0 auto;
+}
+
+.overlay{
+	height: 550px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+
+.front-back{
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	background-image: url("./images/front1.jpg");
+	height: 550px;
+	max-width: 100%;
+}
+
+.sectiontitle{
+	color: #f70000;
+	font-family: Brush Script Std;
+	text-shadow: 2px 3px 3px #4c4c4c;
+	font-size: 60px;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left: 50%;
+	top: 0%;
+}
+
+.front-title{
+	color: white;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	font-family: Arial Black;
+	letter-spacing: .13em;
+	text-align: center;
+	padding: 30px;
+	font-size: 60px;
+	transform: translate(-50%, -50%);
+}
+
+.slogan{
+	color: white;
+	position: absolute;
+	top: 52%;
+	left: 50%;
+	font-family: Century Gothic;
+	text-align: center;
+	padding: 30px;
+	letter-spacing: .25em;
+	font-size: 20px;
+	transform: translate(-50%, -50%);
+}
+
+.welcome{
+	color: #f70000;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	font-family: Brush Script Std;
+	letter-spacing: .13em;
+	text-align: center;
+	padding: 30px;
+	font-size: 35px;
+	transform: translate(-50%, -50%);
+}
+
+
+.menu{
+	list-style-type: none;
+	margin: 0;
+	position: absolute;
+	left: 20%;
+	padding: 0;
+	overflow: hidden;
+	background-color: ;
+}
+
+.menu li{
+	float: left;
+	width: 150px;
+}
+
+.menu li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 30px 16px;
+	text-decoration: none;
+	font-family: Helvetica;
+	font-size: 20px;
+}
+
+.menu li a:hover{
+	color: #FCD000;
+}
+
+#about-section1{
+	height: 800px;
+	max-width: 100%;
+	position: relative;
+}
+
+.quotation{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 72%;
+	font-family: Century Gothic;
+	font-size: 30px;
+}
+
+.textabout{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 85%;
+	font-family: Calibri;
+	font-size: 15px;
+	text-align: center;
+	color: #4c4c4c;
+}
+
+#about-section1 img{
+	height: 500px;
+	width: 500px;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 40%;
+	position: absolute;
+}
+
+#footer{
+	background-color: rgb(51,51,51);
+	height: 70px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+
+#footer p{
+		font-family: Helvetica;
+		color: white;
+		position: absolute;
+		margin: 0;
+		transform: translate(-50%, 0%);
+		left: 50%;
+		margin-top: 20px;
+		font-size: 13px;
+		
+}
+
+</style>
+</head>
+<body>
+<div id = "page-wrap"> 
+	<div class = "front-back">
+	<div class = "overlay">
+		<!-- Menu -->
+		<ul class = "menu">
+			<li> <a href = "index.html#parallax-2"> Menu </a></li>
+			<li> <a href = "index.html#parallax-1"> Hot Topic </a></li>
+			<li> <a href= "index.html"> <img src = "./images/logo.png" style = "height: 150px; width: 150px; margin-top: -55px;"/></a></li>
+			<li> <a href = "about.html"> About </a></li>
+			<li> <a href = "contact.html">Contact </a></li>
+		</ul>
+		<p class = "welcome"> Welcome! </p>
+		<p class = "front-title"> FINE AND DINE </p>
+		<p class = "slogan"> We serve good korean cuisine. </p>
+	</div>
+	</div>
+	
+	<div id = "about-section1">
+		<h1 class = "sectiontitle" style ="position: absolute; left: 50%;"> About Us </h1> 
+		<img src = "./images/logo.png" />
+		<p class = "quotation"> "WE ARE THE FINE AND DINE" </p>
+		<p class = "textabout"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet tellus dolor. Duis malesuada lorem id dolor egestas vulputate. Sed at venenatis felis. In at sagittis lorem. Maecenas lobortis ac mi eu mollis.  sollicitudiDuis malesuada lorem id dolor egestas vulputate. Sed at venenatis felis. In at sagittis lorem. Maecenas lobortis ac mi eu mollis.  sollicitudiDuis malesuada lorem id dolor egestas vulputate. Sed at venenatis felis. In at sagittis lorem. Maecenas lobortis ac mi eu mollis.  sollicitudin non orci. Nunc pulvinar lobortis ornare. </p>
+	</div>
+	
+	
+	<div id="footer">
+	<p> All pictures use herin are the properties of their respective owners. </p> <br/>
+	<p> &copy; All Rights Reserved to Fine and Dine </p>
+	</div>
+	
+</div>
+
+
+
+</body>
+</html>

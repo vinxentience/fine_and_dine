@@ -1,0 +1,333 @@
+<html>
+<head> 
+<title> Fine and Dine </title>
+<style>
+
+body{
+	margin: 0 auto;
+	overflow-x: hidden;
+	background-color: rgb(21,25,31);
+}
+
+#page-wrap{
+	width: 1365px;
+	margin: 0 auto;
+}
+
+.overlay{
+	height: 550px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+
+.front-back{
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	background-image: url("./images/front1.jpg");
+	height: 550px;
+	max-width: 100%;
+}
+
+.sectiontitle{
+	color: #f70000;
+	font-family: Brush Script Std;
+	text-shadow: 2px 3px 3px #4c4c4c;
+	font-size: 60px;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left: 50%;
+	top: 0%;
+}
+
+.front-title{
+	color: white;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	font-family: Arial Black;
+	letter-spacing: .13em;
+	text-align: center;
+	padding: 30px;
+	font-size: 60px;
+	transform: translate(-50%, -50%);
+}
+
+.slogan{
+	color: white;
+	position: absolute;
+	top: 52%;
+	left: 50%;
+	font-family: Century Gothic;
+	text-align: center;
+	padding: 30px;
+	letter-spacing: .25em;
+	font-size: 20px;
+	transform: translate(-50%, -50%);
+}
+
+.welcome{
+	color: #f70000;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	font-family: Brush Script Std;
+	letter-spacing: .13em;
+	text-align: center;
+	padding: 30px;
+	font-size: 35px;
+	transform: translate(-50%, -50%);
+}
+
+
+.menu{
+	list-style-type: none;
+	margin: 0;
+	position: absolute;
+	left: 20%;
+	padding: 0;
+	overflow: hidden;
+	background-color: ;
+}
+
+.menu li{
+	float: left;
+	width: 150px;
+}
+
+.menu li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 30px 16px;
+	text-decoration: none;
+	font-family: Helvetica;
+	font-size: 20px;
+}
+
+.menu li a:hover{
+	color: #FCD000;
+}
+
+
+#contact-section1{
+	height: 650px;
+	max-width: 100%;
+	position: relative;
+}
+
+#computercontainer{
+	height: 100%;
+	width: 600px;
+	float: left;
+	transform: translate(-50%, -50%);
+	top: 65%;
+	left: 50%;
+	position: relative;
+}
+
+#headcomputer{
+	background-color: black;
+	border-radius: 10px;
+	height: 450px;
+	width: 600px;
+}
+
+#screencomputer{
+	background-color: white;
+	border-radius: 10px;
+	height: 380px;
+	width: 530px;
+	margin: 24px;
+	position: absolute;
+	padding: 10px;
+	overflow: hidden;
+}
+
+#neckcomputer{
+	height: 70px;
+	width: 100px;
+	background-color: #625b5c;
+	margin-left: 250px;
+	
+}
+
+#footcomputer{
+	height: 20px;
+	width: 150px;
+	background-color: #625b5c;
+	margin-left: 225px;
+	border-radius: 5px;
+}
+
+#fname{
+	height: 50px;
+	width: 300px;
+	border-radius: 5px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	position: relative;
+	top: -100px;
+	animation: show-in-opacity 1s 2s ease forwards;
+}
+
+@-webkit-keyframes show-in-opacity{
+	0%{top: -100px;}
+	100%{top: 0px;}
+}
+
+#sname{
+	height: 50px;
+	width: 225px;
+	border-radius: 5px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	position: relative;
+	top: -100px;
+	animation: show-in-opacity 1s 2.5s ease forwards;
+}
+
+#ename{
+	height: 50px;
+	width: 0px;
+	border-radius: 5px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	position: relative;
+	margin-top: 20px;
+	left: -100px;
+	animation: size-in-anim 1s 3.5s ease forwards;
+}
+@-webkit-keyframes size-in-anim{
+	0%{left: -100px;}
+	30%{width: 0px;}
+	100%{left: 0; width: 530px;}
+}
+
+#mname{
+	height: 230px;
+	width: 530px;
+	border-radius: 5px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	position: relative;
+	margin-top: 20px;
+	animation: scale-in-anim 1s 4s ease forwards;
+	transform: scale(0);
+}
+
+@-webkit-keyframes scale-in-anim{
+	0%{-webkit-transform: scale(0);}
+	100%{-webkit-transform: scale(1);}
+}
+
+.submitbutton{
+	margin: 15px;
+	height: 30px;
+	width: 70px;
+	-webkit-transform: scale(0);
+	animation: scale-in-out-anim 1.5s 4s ease forwards;
+}
+
+@-webkit-keyframes scale-in-out-anim{
+	0%{-webkit-transform: scale(0);}
+	40%{-webkit-transform: scale(1);}
+	80%{-webkit-transform: scale(0);}
+	100%{-webkit-transform: scale(1);}
+}
+
+#section4-container{
+	max-width: 100%;
+	position: relative;
+	height: 100px;
+	margin-top: -20px;
+}
+
+.social-container{
+	margin-left: 45%;
+	margin-top: 70px;
+	position: relative;
+}
+
+#footer{
+	background-color: rgb(51,51,51);
+	height: 70px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+
+#footer p{
+		font-family: Helvetica;
+		color: white;
+		position: absolute;
+		margin: 0;
+		transform: translate(-50%, 0%);
+		left: 50%;
+		margin-top: 20px;
+		font-size: 13px;
+		
+}
+
+</style>
+</head>
+<body>
+<div id = "page-wrap"> 
+	<div class = "front-back">
+	<div class = "overlay">
+		<!-- Menu -->
+		<ul class = "menu">
+			<li> <a href = "index.html#parallax-2"> Menu </a></li>
+			<li> <a href = "index.html#parallax-1"> Hot Topic </a></li>
+			<li> <a href= "index.html"> <img src = "./images/logo.png" style = "height: 150px; width: 150px; margin-top: -55px;"/></a></li>
+			<li> <a href = "about.html"> About </a></li>
+			<li> <a href = "contact.html">Contact </a></li>
+		</ul>
+		<p class = "welcome"> Welcome! </p>
+		<p class = "front-title"> FINE AND DINE </p>
+		<p class = "slogan"> We serve good korean cuisine. </p>
+	</div>
+	</div>
+	
+	<div id = "contact-section1">
+		<h1 class = "sectiontitle" style ="position: absolute; left: 50%;"> Contact Us </h1> 
+		<div id="computercontainer"> 
+				<div id="headcomputer"> 
+					<div id="screencomputer">
+				<form action="index.html">
+						<input type="text" placeholder="Your First Name..." id="fname" required/> <input type="text" placeholder="Your Surname Name..." id="sname" required/>
+						<input type="text" placeholder="Your E-mail Address..." id="ename" required/>
+						<input type="text" placeholder="Your Message..." id="mname" required/>
+					</div>
+				</div>
+				<div id="neckcomputer"> <input type="submit" value="Submit" class="submitbutton"> </div>
+				</form>
+				<div id="footcomputer"> </div>
+			</div> 
+	</div>
+	
+	<div id = "section4-container"> 
+		<div class = "social-container">
+		<a href = "http://www.facebook.com"> <img src = "./images/fb.png" style = "height: 50px; width: 50px;"/></a>
+		<a href = "http://www.twitter.com"> <img src = "./images/twitter.png" style = "height: 50px; width: 50px;"/> </a>
+		<a href = "http://www.youtube.com"> <img src = "./images/yt.png" style = "height: 50px; width: 60px;"/></a> <br />
+		</div>
+	</div>
+	
+	
+	<div id="footer">
+	<p> All pictures use herin are the properties of their respective owners. </p> <br/>
+	<p> &copy; All Rights Reserved to Fine and Dine </p>
+	</div>
+	
+</div>
+
+
+
+</body>
+</html>
